@@ -1,0 +1,26 @@
+Read all of the lines in the attached PDB file into one string variable by using the following:
+
+content= file.read()
+where "file" is the pointer to the actual PDB file.
+
+By using string operations print out only the lines that match the criteria below:
+
+1) All lines that start with "ATOM"
+
+2) All lines that start with "ATOM" and have the residue name "LEU" in the 4th column
+
+3) All lines that start with "ATOM" and have the atom name "CA" in the 3rd column
+
+Perform the following operations by parsing the string variable "content".
+
+4) Print the distance between all consecutive "CA" atoms. In every line starting with "ATOM", columns 7, 8, and 9 contain the cartesian coordinates of the atom.  
+
+5) Lines starting with "SEQRES" contain the three letter code for all the aminoacids that make up the protein. Extract the aminoacid sequence of the protein by scanning all lines that start with "SEQRES".
+
+6) Count the total number of "References" given in the PDB file. The references are given in the lines starting with "REMARK" and separated by the "REFERENCE" keyword. Caution for split up title or author lines. 
+
+7) Read all the reference information from the file, and print out the references in Nature 
+style:
+
+Ex: Bart, R., Chern, M., Park, C. J., Bartley, L. & Ronald, P. C. A novel system for gene silencing using siRNAs in rice leaf and stem-derived protoplasts. Plant Methods 2, 13 (2006)
+

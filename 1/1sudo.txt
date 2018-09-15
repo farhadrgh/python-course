@@ -1,0 +1,14 @@
+import random function
+set step(s) 	to 1000000
+set total(t)	to 0
+set circle(c)	to 0
+
+while total number of points is less than number of step
+	set x coordinate of point to a random number between -1 and 1
+	set y coordinate of point to a random number between -1 and 1
+	set r (length of the point vector) to (x square + y square)
+	if r is less than 1
+		add one to c (circle)
+	add one to t (total)
+set p number to division of # of points in circle by # of point in total multiplied by 4
+print p number
